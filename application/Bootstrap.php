@@ -17,15 +17,21 @@ class Bootstrap extends Yaf_Bootstrap_Abstract {
 
 	public function _initPlugin(Yaf_Dispatcher $dispatcher) {
 		//注册一个插件
-		$objSamplePlugin = new SamplePlugin();
-		$dispatcher->registerPlugin($objSamplePlugin);
+        $objSamplePlugin = new SamplePlugin();
+        $dispatcher->registerPlugin($objSamplePlugin);
 	}
 
 	public function _initRoute(Yaf_Dispatcher $dispatcher) {
 		//在这里注册自己的路由协议,默认使用简单路由
+
 	}
 	
 	public function _initView(Yaf_Dispatcher $dispatcher) {
 		//在这里注册自己的view控制器，例如smarty,firekylin
 	}
+
+	// 注册session
+	public function _initSession(Yaf_Dispatcher $dispatcher){
+//        session_start();
+    }
 }

@@ -11,7 +11,7 @@ class IndexController extends Yaf_Controller_Abstract {
      * 如果这个方法被定义，那么在Controller被构造以后，Yaf会调用这个方法
      */
     public function init() {
-		$this->getView()->assign("header", "Yaf Example");
+		$this->getView()->assign("header", "assasin0308@sina.com");
 	}
 
 	/** 
@@ -30,7 +30,14 @@ class IndexController extends Yaf_Controller_Abstract {
 		$this->getView()->assign("content", $model->selectSample());
 		$this->getView()->assign("name", $name);
 
+
 		//4. render by Yaf, 如果这里返回FALSE, Yaf将不会调用自动视图引擎Render模板
         return TRUE;
 	}
+
+
+
+
+
+
 }
