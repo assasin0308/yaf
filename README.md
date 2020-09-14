@@ -81,3 +81,22 @@ application.library.namespace = "Tool,Admin,Conf"
 yaf\Loader::import("/data/wwwroot/demo.php")
 ```
 
+### 3. request
+
+```php
+//get 
+$get = $this->getRequest()->getQuery();
+echo $this->getRequest()->get('name');
+$this->getRequest()->isGet(); //是否是GET方法
+$this->getResponse()->setRedirect("http://www.baidu.com"); // 301重定向
+// post
+$post = $this->getRequest()->getPost();
+echo $this->getRequest()->post('name');
+// file 
+$file = $this->getRequest()->getFile();
+// params
+$parmas = $this->getRequest()->getParams();
+
+
+```
+

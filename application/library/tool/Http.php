@@ -6,7 +6,7 @@
  * Time: 18:53
  */
 
-namespace Tool;
+namespace tool;
 class Http{
     public static function getHost(){
         return $_SERVER['HTTP_HOST'].'local';
